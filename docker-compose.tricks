@@ -1,0 +1,7 @@
+Ejecutar un contenedor concreto
+docker-compose run gitlab
+docker-compose run gitlab /bin/bash
+Actualizar permissions
+docker-compose run gitlab update-permissions
+Ojo con los permisos de /volumes/data y volumes/logs
+porque el grupo debe ser bumblebee y los uids son los de los usuarios del contenedor
